@@ -2,7 +2,8 @@
 
 export class AgeCalculator () {
 
-  constructor (seconds, years){
+  constructor (age, years, seconds){
+    this.age = age;
     this.seconds = seconds;
     this.years = years;
   }
