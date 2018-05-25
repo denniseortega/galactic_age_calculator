@@ -1,9 +1,8 @@
 #Galatic Age Calculator
 
-Setup instructions:
+Setup/Installation Requirements
 
-NPM must be installed.
-
+* NPM must be installed
 * git clone
 * cd to Template / project name root directory
 * npm install
@@ -11,7 +10,7 @@ NPM must be installed.
 * npm run start
 
 
-Specs:
+Specifications:
 
 * Take a person's age in years and convert it into seconds.
 * Take the two dates and determine the difference, in seconds, between the two.
@@ -22,4 +21,4 @@ Specs:
 * If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
 
 License:
-* MIT 
+* MIT
