@@ -1,14 +1,15 @@
+//front-end
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { template } from './template.js';
+import { AgeCalculator} from './agecalculator.js';
 
 $(document).ready(function() {
-  $('#starter-form').submit(function(event) {
+  $('#ageform').submit(function(event) {
     event.preventDefault();
-    var goal = $('#goal').val();
-    var output = template(goal);
+    var age = $('#age').val();
+    var output = age();
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
     });

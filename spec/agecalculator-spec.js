@@ -16,22 +16,30 @@ describe('AgeCalculator', function() {
 
   it ('should return the age of a human in Mercury Years', function () {
       let agecalculator = new AgeCalculator();
-      expect(ageInSeconds.ageInMercury(20)).toEqual(83.33)
+      expect(ageInCalculator.ageInMercury(20)).toEqual(83.33)
   });
 
   it ('should return the age of a human in Venus Years', function () {
       let agecalculator = new AgeCalculator();
-      expect(ageInSeconds.ageInVenus(20)).toEqual(32.26)
+      expect(ageInCalculator.ageInVenus(20)).toEqual(32.26)
   });
 
   it ('should return the age of a human in Mars Years', function () {
       let agecalculator = new AgeCalculator();
-      expect(ageInSeconds.ageInMars(20)).toEqual(10.64)
+      expect(ageInCalculator.ageInMars(20)).toEqual(10.64)
   });
 
   it ('should return the age of a human in Jupiter Years', function () {
       let agecalculator = new AgeCalculator();
-      expect(ageInSeconds.ageInJupiter(20)).toEqual(1.69)
+      expect(ageInCalculator.ageInJupiter(20)).toEqual(1.69)
+  });
+
+  it ('should calculate the users life expectancy on each planet', function() {
+    let agecalculator = new AgeCalculator();
+    let age = 20;
+    let planet = "Mercury";
+    let activityLevel = "high";
+    expect(ageInCalculator.lifeExpectancy(age, activityLevel)).toEqual("250"+"years left on"+planet);
   });
 
 });

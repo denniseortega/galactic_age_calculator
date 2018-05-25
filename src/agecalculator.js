@@ -1,3 +1,5 @@
+//back-end
+
 export class AgeCalculator () {
 
   constructor (seconds, years){
@@ -35,8 +37,88 @@ export class AgeCalculator () {
   ageInJupiterYears(age){
     let jupiterYears = (Math.floor(age/11.86));
     return jupiterYears;
-    
   }
 
+  lifeExpectancy(age, planet, activityLevel){
+    if (planet === "Mercury" && activityLevel === "high"){
+      const expectedYears = 80;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/.24)) + "years left on" + planet);
+      } else {
+        let yearsSurpassed = (age - expectedYears);
+        return "You have surpassed the average life expectancy by" + (yearsSurpassed);
+      }
+      }
 
+    if (planet === "Mercury" && activityLevel === "low"){
+      const expectedYears = 60;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/.24)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+
+    if (planet === "Venus" && activityLevel === "high"){
+      const expectedYears = 70;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/.62)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+
+    if (planet === "Venus" && activityLevel === "low"){
+      const expectedYears = 50;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/.62)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+
+    if (planet === "Mars" && activityLevel === "high"){
+      const expectedYears = 85;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/1.88)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+
+    if (planet === "Mars" && activityLevel === "low"){
+      const expectedYears = 75;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/1.88)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+
+    if (planet === "Jupiter" && activityLevel === "high"){
+      const expectedYears = 45;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/11.86)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+
+    if (planet === "Jupiter" && activityLevel === "low"){
+      const expectedYears = 35;
+      if (age <= expectedYears){
+        let yearsLeftOnEarth = (expectedYears - age);
+        return (Math.floor(yearsLeftOnEarth/11.86)) + "years left on" + planet);
+      } else {
+        return "You have surpassed the average life expectancy :("
+      }
+      }
+    }
 }
