@@ -1,6 +1,7 @@
 //back-end
+var moment = require('moment');
 
-export class AgeCalculator () {
+export class AgeCalculator {
 
   constructor (age, years, seconds){
     this.age = age;
@@ -45,7 +46,7 @@ export class AgeCalculator () {
       const expectedYears = 80;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/.24)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/.24)) + "years left on" + planet;
       } else {
         let yearsSurpassed = (age - expectedYears);
         return "You have surpassed the average life expectancy by" + (yearsSurpassed);
@@ -56,7 +57,7 @@ export class AgeCalculator () {
       const expectedYears = 60;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/.24)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/.24)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
@@ -66,7 +67,7 @@ export class AgeCalculator () {
       const expectedYears = 70;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/.62)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/.62)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
@@ -76,7 +77,7 @@ export class AgeCalculator () {
       const expectedYears = 50;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/.62)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/.62)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
@@ -86,7 +87,7 @@ export class AgeCalculator () {
       const expectedYears = 85;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/1.88)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/1.88)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
@@ -96,7 +97,7 @@ export class AgeCalculator () {
       const expectedYears = 75;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/1.88)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/1.88)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
@@ -106,7 +107,7 @@ export class AgeCalculator () {
       const expectedYears = 45;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/11.86)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/11.86)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
@@ -116,7 +117,7 @@ export class AgeCalculator () {
       const expectedYears = 35;
       if (age <= expectedYears){
         let yearsLeftOnEarth = (expectedYears - age);
-        return (Math.floor(yearsLeftOnEarth/11.86)) + "years left on" + planet);
+        return (Math.floor(yearsLeftOnEarth/11.86)) + "years left on" + planet;
       } else {
         return "You have surpassed the average life expectancy :("
       }
